@@ -42,7 +42,6 @@ describe('yo polymer:seed test', function () {
       'x-foo/x-foo.css',
       'x-foo/x-foo.html',
       'x-foo/test/index.html',
-      'x-foo/test/tests.html',
       'x-foo/test/x-foo-basic.html',
     ];
 
