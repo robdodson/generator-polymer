@@ -92,16 +92,16 @@ module.exports = yeoman.generators.Base.extend({
     this.copy('gitignore', '.gitignore');
     this.copy('gitattributes', '.gitattributes');
     this.copy('bowerrc', '.bowerrc');
-    this.template('_bower.json', 'bower.json');
+    this.copy('_bower.json', 'bower.json');
     this.copy('jshintrc', '.jshintrc');
     this.copy('editorconfig', '.editorconfig');
-    this.template('_seed-element.css', this.elementName + '.css');
-    this.template('_seed-element.html', this.elementName + '.html');
-    this.template('_index.html', 'index.html');
-    this.template('_demo.html', 'demo.html');
-    this.template('_README.md', 'README.md');
-    this.template('test/index.html', 'test/index.html');
-    this.template('test/seed-element-basic.html',
+    this.copy('_seed-element.css', this.elementName + '.css');
+    this.copy('_seed-element.html', this.elementName + '.html');
+    this.copy('_index.html', 'index.html');
+    this.copy('_demo.html', 'demo.html');
+    this.copy('_README.md', 'README.md');
+    this.copy('test/index.html', 'test/index.html');
+    this.copy('test/seed-element-basic.html',
                   'test/' + this.elementName + '-basic.html');
   },
   install: function () {

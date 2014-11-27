@@ -18,7 +18,7 @@
     "url": "git://github.com/yeoman/generator-polymer.git"
   },
   "scripts": {
-    "test": "jshint {app,el,gh,seed}/*.js && mocha --reporter spec"
+    "test": "jshint {app,el,gh,seed}/*.js && mocha --reporter spec --timeout 5000"
   },
   "dependencies": {
     "chalk": "^0.5.1",

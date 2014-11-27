@@ -71,16 +71,16 @@ module.exports = yeoman.generators.Base.extend({
     this.copy('_bower.json', 'bower.json');
     this.copy('jshintrc', '.jshintrc');
     this.copy('editorconfig', '.editorconfig');
-    this.template('Gruntfile.js');
-    this.template('_package.json', 'package.json');
+    this.copy('Gruntfile.js');
+    this.copy('_package.json', 'package.json');
     this.mkdir('app');
     this.mkdir('app/styles');
     this.mkdir('app/images');
     this.mkdir('app/scripts');
     this.mkdir('app/elements');
-    this.template('app/404.html');
-    this.template('app/favicon.ico');
-    this.template('app/robots.txt');
+    this.copy('app/404.html');
+    this.copy('app/favicon.ico');
+    this.copy('app/robots.txt');
     this.copy('app/main.css',
       this.includeSass ? 'app/styles/main.scss':
                          'app/styles/main.css');
